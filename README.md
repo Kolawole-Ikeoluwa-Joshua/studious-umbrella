@@ -5,7 +5,7 @@ lightweight-microservice blog application using React and Nodejs
 
 # Getting Started
 
-This project was uses [Nodejs](https://nodejs.org/en/docs) and [React](https://react.dev/learn).
+This project uses [Nodejs](https://nodejs.org/en/docs) and [React](https://react.dev/learn).
 
 ## Available Scripts
 
