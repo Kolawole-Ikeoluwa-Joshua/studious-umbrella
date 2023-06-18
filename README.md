@@ -13,6 +13,7 @@ In the following project directories, you can run:
 
 * client
 * comments
+* event-bus
 * posts
 
 ### `npm start`
