@@ -1,23 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 
+const App = ({ comments }) => {
 
-const App = ({ postId }) => {
-    // state
-    const [comments, setComments] = useState([]);
-
-    // function to fetch data
-    const fetchData = async () => {
-        const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`);
-
-        setComments(res.data);
-    };
-
-    // call function
-    useEffect(() => {
-        fetchData();
-
-    }, []);
 
     // map over data fetched (list of comments)
     const renderedComments = comments.map(comment => {

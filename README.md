@@ -15,5 +15,6 @@ In the following project directories, you can run:
 * comments
 * event-bus
 * posts
+* query
 
 ### `npm start`
