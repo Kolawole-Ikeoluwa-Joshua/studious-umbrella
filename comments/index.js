@@ -37,8 +37,8 @@ app.post('/posts/:id/comments', async (req, res) => {
             id: commentId,
             content,
             postId: req.params.id,
-            status: 'pending'
-        }
+            status: 'pending',
+        },
     });
 
 
@@ -64,14 +64,14 @@ app.post('/events', async (req,res) => {
         // update comment status
         comment.status = status;
 
-        await axios.post('http://localhost:4005', {
+        await axios.post('http://localhost:4005/events', {
             type: 'CommentUpdated',
             data: {
                 id,
                 status,
                 postId,
-                content
-            }
+                content,
+            },
         });
     }
 
@@ -82,4 +82,4 @@ app.post('/events', async (req,res) => {
 
 app.listen(4001, () => {
     console.log('Listening on 4001');
-})
+});
