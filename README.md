@@ -21,7 +21,10 @@ In the following project directories, you can run:
 * posts
 * query
 
-### `npm start`
+
+```
+npm start
+```
 
 
 ### Running Services with Docker
