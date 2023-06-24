@@ -75,7 +75,7 @@ kubectl version -output=json
 ```
 
 #### create a pod
-* use the [posts.yaml] configuration file found in [infrastructure/k8s] directory
+* use the `posts.yaml` configuration file found in `infrastructure/k8s` directory
 ```
 kubectl apply -f posts.yaml
 
