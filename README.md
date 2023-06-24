@@ -61,3 +61,25 @@ docker exec -it [container id] [cmd]
 ```
 docker logs [container id]
 ```
+
+
+### Orchestrating Services with K8s
+
+#### setup
+Install kubernetes on your local machine. If using windows - Docker Desktop has made this easy
+
+After installation confirm your K8s version with this command:
+
+```
+kubectl version -output=json
+```
+
+#### create a pod
+* use the [posts.yaml] configuration file found in [infrastructure/k8s] directory
+```
+kubectl apply -f posts.yaml
+
+kubectl get pods
+
+kubectl delete pod <pod_name>
+```
