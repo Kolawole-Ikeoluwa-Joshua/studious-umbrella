@@ -117,3 +117,15 @@ docker push <docker_id/posts>
 kubectl rollout restart deployment [depl_name]
 ```
 * check pod logs for code changes
+
+
+#### Networking with Services
+1. ClusterIP - Network access between pods in the cluster
+2. NodePort - Allow external access to pods in the cluster (dev)
+3. LoadBalancer  - Allow external access to pods in the cluster - recommended (prod)
+
+```
+kubectl get services
+
+kubectl describe service <service_name>
+```
