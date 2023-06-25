@@ -89,3 +89,16 @@ kubectl delete pod <pod_name>
 ```
 kubectl apply -f posts-depl.yaml
 ```
+
+explore deployments using these commands:
+```
+kubectl get deployments
+
+kubectl get pods
+
+kubectl delete pod <pod_id>
+
+kubectl describe deployment
+
+kubectl delete deployment <deployment_name>
+```
