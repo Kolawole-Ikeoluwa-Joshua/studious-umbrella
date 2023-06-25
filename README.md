@@ -83,3 +83,9 @@ kubectl get pods
 
 kubectl delete pod <pod_name>
 ```
+#### create a deployment
+* use the `posts-depl.yaml` file
+
+```
+kubectl apply -f posts-depl.yaml
+```
