@@ -96,9 +96,24 @@ kubectl get deployments
 
 kubectl get pods
 
+kubectl logs <pod_id>
+
 kubectl delete pod <pod_id>
 
 kubectl describe deployment
 
 kubectl delete deployment <deployment_name>
 ```
+#### update a deployment
+steps: 
+* make changes to code 
+* build image with latest tag 
+* push image to docker hub 
+```
+docker push <docker_id/posts>
+```
+* rollout new deployments
+```
+kubectl rollout restart deployment [depl_name]
+```
+* check pod logs for code changes
