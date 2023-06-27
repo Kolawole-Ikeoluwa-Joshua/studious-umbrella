@@ -129,3 +129,8 @@ kubectl get services
 
 kubectl describe service <service_name>
 ```
+
+#### Installing Ingress-Nginx
+To properly route traffic between services and pods we setup, 
+[Ingress-Nginx-Controller](https://kubernetes.github.io/ingress-nginx/deploy/#quick-start) for the k8s cluster.
+
