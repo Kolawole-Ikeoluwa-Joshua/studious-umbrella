@@ -15,12 +15,13 @@ app.use(cors());
 // stores posts created
 const posts = {};
 
+// used to test posts endpoint after setting ingress-nginx
 app.get('/posts', (req, res) => {
     res.send(posts);
 });
 
 
-app.post('/posts', async (req, res) => {
+app.post('/posts/create', async (req, res) => {
     // generate post id
     const id = randomBytes(4).toString('hex');
 

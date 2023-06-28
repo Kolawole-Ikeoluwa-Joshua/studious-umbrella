@@ -137,6 +137,6 @@ To properly route traffic between services and pods we setup,
 
 #### deploying React App:
 * make sure to add environemnt variables to Dockerfile
-* update codebase with appropriate custom domain
+* note: ensure to update hosts file on local dev env, update codebase with appropriate custom domain.
 * build and push docker image to dockerhub
 * creat k8s deployment file
