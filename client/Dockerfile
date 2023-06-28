@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:16-alpine
 
 # add environment variables to get create-react-app to work correctly in docker
 ENV CI=true
