@@ -15,10 +15,6 @@ spec:
       containers:
       - name: client
         image: kolawolejoshua/client:latest
-        resources:
-          limits:
-            memory: "256Mi"
-            cpu: "500m"
 ---
 apiVersion: v1
 kind: Service
