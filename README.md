@@ -140,3 +140,14 @@ To properly route traffic between services and pods we setup,
 * note: ensure to update hosts file on local dev env, update codebase with appropriate custom domain.
 * build and push docker image to dockerhub
 * creat k8s deployment file
+
+#### Automating development workflow in k8s:
+Set up `Skaffold`
+
+* easy to update code in a running pod
+* easy to create/delete all objects tied to a project at once
+
+run skaffold:
+```
+skaffold dev
+```
